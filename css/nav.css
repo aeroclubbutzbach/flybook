@@ -1,0 +1,91 @@
+<!--
+
+	a.nav
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9.5pt;
+		font-weight: bold;
+		text-decoration: none;
+		color: #ffffff;
+	}
+	
+	a.nav:active
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9.5pt;
+		font-weight: bold;
+		text-decoration: underline;
+		color: #ffffff;
+	}
+	
+	a.nav:hover
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9.5pt;
+		font-weight: bold;
+		text-decoration: underline;
+		color: #ffffff;
+	}
+	
+	a.top
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9.5pt;
+		font-weight: bold;
+		text-decoration: none;
+		color: #ffffff;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	
+	a.top:hover
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9.5pt;
+		font-weight: bold;
+		text-decoration: underline;
+		color: #ffffff;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	
+	.runde_ecken_links
+	{
+		border-left: 1px solid #666666;
+		border-top: 1px solid #666666;
+		border-bottom: 1px solid #ffffff;
+		-webkit-border-top-left-radius : 5px;
+		-khtml-border-top-left-radius  : 5px;
+		-moz-border-top-left-radius    : 5px;
+		border-top-left-radius         : 5px;
+		-webkit-border-bottom-left-radius : 5px;
+		-khtml-border-bottom-left-radius  : 5px;
+		-moz-border-bottom-left-radius    : 5px;
+		border-bottom-left-radius         : 5px;
+		background-image:url('../img/login_form_button_bg.jpg');
+	}
+	
+	.runde_ecken_rechts
+	{
+		border-right: 1px solid #666666;
+		border-top: 1px solid #666666;
+		border-bottom: 1px solid #ffffff;
+		-webkit-border-top-right-radius : 5px;
+		-khtml-border-top-right-radius  : 5px;
+		-moz-border-top-right-radius    : 5px;
+		border-top-right-radius         : 5px;
+		-webkit-border-bottom-right-radius : 5px;
+		-khtml-border-bottom-right-radius  : 5px;
+		-moz-border-bottom-right-radius    : 5px;
+		border-bottom-right-radius         : 5px;
+		background-image:url('../img/login_form_button_bg.jpg');
+	}
+	
+	.login_daten
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 8pt;
+		line-height: 150%;
+	}
+
+-->

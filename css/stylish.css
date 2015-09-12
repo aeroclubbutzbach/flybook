@@ -1,0 +1,809 @@
+<!--
+
+	h1
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 16pt;
+	}
+
+	h2, h3, h4
+	{
+		font-family: Verdana, Sans-Serif;
+	}
+	
+	.errorline h3
+	{
+		margin-top: 0px;
+		color: #ff0000;
+	}
+	
+	.infoline h3
+	{
+		margin-top: 0px;
+		color: #00007f;
+	}
+	
+	h3.fluggeldkonto, h3.inline_wartung
+	{
+		font-family: Verdana, Sans-Serif;
+		color: #000000;
+	}
+	
+	.helpline
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9pt;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 45px;
+		border: 1px solid #e5e5e5;
+		background-color: #ffffe1;
+		width: 500px;
+		background-image: url('./../img/lightbulb_on.png');
+		background-repeat: no-repeat;
+		background-position: 7px 10px;
+		min-height: 30px;
+		line-height: 150%;
+	}
+	
+	#info_box
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9pt;
+		line-height: 150%;
+		min-height: 50px;
+		min-width: 300px;
+		padding-left: 45px;
+		background-image: url('./../img/115111_32422_32_information_icon.png');
+		background-repeat: no-repeat;
+		background-position: 5px 5px;
+	}
+	
+	.errorline
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9pt;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		border: 1px dashed #ff0000;
+		background-color: #ffe7e7;
+		width: 500px;
+		background-image: url('./../img/error.png');
+		background-repeat: no-repeat;
+		background-position: 7px 10px;
+		min-height: 30px;
+		line-height: 150%;
+	}
+	
+	.infoline
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9pt;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+		padding-left: 50px;
+		border: 1px dashed #0000ff;
+		background-color: #cccce5;
+		width: 500px;
+		background-image: url('./../img/115111_32422_32_information_icon.png');
+		background-repeat: no-repeat;
+		background-position: 7px 10px;
+		min-height: 30px;
+		line-height: 150%;
+	}
+	
+	legend
+	{
+		font-family: Verdana, Sans-Serif;
+		font-size: 9pt;
+		color: Navy;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 10px;
+	}
+	
+	fieldset
+	{
+		-webkit-border-radius : 8px;
+		-webkit-border-colors : #f6f6f6;
+		-khtml-border-radius  : 8px;
+		-khtml-border-colors  : #f6f6f6;
+		-moz-border-radius    : 8px;
+		-moz-border-colors    : #f6f6f6;
+		border-radius         : 8px;
+		border-colors         : #f6f6f6;
+	}
+	
+	#csv_select, #csv_import, #neue_buchung, #cancel_buchung, #zeitfenster_filter, #avatar_upload, #avatar_delete, #bilddatei_upload, #bilddatei_delete, #wartung_neu_add, #wartung_neu_cancel, #wartung_neu_edit, #button_monatsabrechnung, #button_mailversand, #jahresumsatz
+	{
+		background-image: url('../img/toolbar_button_item_bg.jpg');
+		font: 8.5pt Verdana, Sans-Serif;
+		font-weight: bold;
+		color: #ffffff;
+		border: 1px solid #000000;
+		height: 26px;
+		padding-left: 20px;
+		padding-right: 20px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+	}
+	
+	#neue_startzeit, #neue_landezeit
+	{
+		background-image: url('../img/toolbar_button_item_bg.jpg');
+		font: 8.5pt Verdana, Sans-Serif;
+		font-weight: bold;
+		color: #ffffff;
+		border: 1px solid #000000;
+		height: 26px;
+		width: 70px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+	}
+
+	#mitglied_speichern, #mitglied_cancel, #flugzeug_speichern, #flugzeug_cancel, #logbuch_speichern, #logbuch_cancel
+	{
+		background-image: url('../img/toolbar_button_item_bg_2.jpg');
+		font: 8.5pt Verdana, Sans-Serif;
+		font-weight: bold;
+		color: #ffffff;
+		border: 1px solid #000000;
+		height: 32px;
+		padding-left: 20px;
+		padding-right: 20px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+	}
+	
+	.mitglied_speichern_buttons, .flugzeug_speichern_buttons
+	{
+		width: 99.9%;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: 1px solid #999999;
+		-webkit-border-radius : 5px;
+		-webkit-border-colors : #f6f6f6;
+		-khtml-border-radius  : 5px;
+		-khtml-border-colors  : #f6f6f6;
+		-moz-border-radius    : 5px;
+		-moz-border-colors    : #f6f6f6;
+		border-radius         : 5px;
+		border-colors         : #f6f6f6;
+	}
+	
+	.logbuch_speichern_buttons
+	{
+		width: 60.3%;
+		margin-top: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border: 1px solid #999999;
+		-webkit-border-radius : 5px;
+		-webkit-border-colors : #f6f6f6;
+		-khtml-border-radius  : 5px;
+		-khtml-border-colors  : #f6f6f6;
+		-moz-border-radius    : 5px;
+		-moz-border-colors    : #f6f6f6;
+		border-radius         : 5px;
+		border-colors         : #f6f6f6;
+	}
+	
+	.pflichtfeld
+	{
+		font-size: 7pt;
+		color: #ff0000;
+		font-weight: normal;
+	}
+	
+	#neue_buchung, #cancel_buchung
+	{
+		padding-left: 7px !important;
+		padding-right: 7px !important;
+	}
+	
+	#fakeupload
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 380px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+	}
+	
+	#buchungsdatum, #datum_filter, #datum_von, #datum_bis, #stand_wartung, #naechste_wartung_datum, #wartung_neu_datum
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 107px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		background: url('../img/datum.png') no-repeat 85px;
+		background-color: #ffffff;
+		cursor: pointer;
+	}
+	
+	#buchungsdatum:focus, #datum_filter:focus, #datum_von:focus, #datum_bis:focus, #stand_wartung:focus, #naechste_wartung_datum:focus, #wartung_neu_datum:focus
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 107px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		background: url('../img/datum.png') no-repeat 85px;
+		background-color: #eeffff;
+		cursor: pointer;
+	}
+	
+	#geburtsdatum, #eintritt, #austritt, #ppladat, #pplbdat, #pplcdat, #uldat, #medical
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 132px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		background: url('../img/datum.png') no-repeat 110px;
+		background-color: #ffffff;
+		cursor: pointer;
+	}
+	
+	#geburtsdatum:focus, #eintritt:focus, #austritt:focus, #ppladat:focus, #pplbdat:focus, #pplcdat:focus, #uldat:focus, #medical:focus
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 132px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		background: url('../img/datum.png') no-repeat 110px;
+		background-color: #eeffff;
+		cursor: pointer;
+	}
+	
+	#bemerkungen
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 270px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+	}
+	
+	#betrag
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		width: 75px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+	}
+	
+	input.mitglied_anlegen, input.flugzeug_anlegen, textarea.mitglied_anlegen, textarea.flugzeug_anlegen, input.adresse, input.wartung_anlegen, textarea.wartung_anlegen, textarea.mailversand, textarea.logbuch_anlegen, input.logbuch_anlegen_integer, input.logbuch_anlegen_temperatur
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		resize: none;
+	}
+	
+	input.mitglied_anlegen_gesperrt, input.flugzeug_anlegen_gesperrt, input.wartung_anlegen_gesperrt,  textarea.wartung_anlegen_gesperrt
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		background-color: #e6e6e6;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		resize: none;
+	}
+	
+	input.flug_anlegen, input.flug_anlegen_zeit
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		resize: none;
+	}
+	
+	input.flug_anlegen_gesperrt
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		background-color: #e6e6e6;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		resize: none;
+	}
+
+	select.mitglied_anlegen, select.flugzeug_anlegen, select.wartung_anlegen, select.zeitraum_monat_jahr, select.mailversand, select.flug_anlegen
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #000000;
+		border: 1px solid #d4d4d4;
+		height: 26px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding: 3px;
+	}
+	
+	select.wartung_anlegen_gesperrt, select.flug_anlegen_gesperrt
+	{
+		font: 10pt Verdana, Sans-Serif !important;
+		font-weight: normal !important;
+		color: #000000 !important;
+		border: 1px solid #d4d4d4 !important;
+		height: 26px !important;
+		background-color: #e6e6e6 !important;
+		-webkit-border-radius : 5px !important;
+		-khtml-border-radius  : 5px !important;
+		-moz-border-radius    : 5px !important;
+		border-radius         : 5px !important;
+		padding: 3px !important;
+	}
+	
+	input.error_line, input.error_line:focus,
+	select.error_line, select.error_line:focus
+	{
+		font: 10pt Verdana, Sans-Serif;
+		font-weight: normal;
+		color: #ff0000;
+		border: 2px solid #ff0000;
+		background-color: #ffe7e7;
+		height: 26px;
+		-webkit-border-radius : 5px;
+		-khtml-border-radius  : 5px;
+		-moz-border-radius    : 5px;
+		border-radius         : 5px;
+		padding-left: 5px;
+		resize: none;
+	}
+	
+	input:focus, select:focus, textarea:focus
+	{
+		background: none repeat scroll 0 0 #eeffff;
+	}
+	
+	#overlay
+	{
+		position: absolute;
+		background: #e0e0e0;
+		opacity: 0.6;
+	}
+	
+	table.fluege_import
+	{
+		font: 8pt Verdana, Sans-Serif;
+		border: 1px solid #c6c6c6;
+	}
+	
+	div.anfangsBuchstaben
+	{
+		font: 10pt Verdana, Sans-Serif;
+		color: #333333;
+		padding-left: 20px;
+	}
+	
+	a.flugzeugAuswahl_01
+	{
+		color: #0000ff;
+		text-decoration: none;
+	}
+	
+	a.flugzeugAuswahl_02
+	{
+		color: #909090;
+		text-decoration: none;
+	}
+	
+	a.anfangsBuchstaben
+	{
+		text-decoration: none;
+		color: #0000ff;
+	}
+	
+	a.anfangsBuchstaben:hover
+	{
+		text-decoration: underline;
+		color: navy;
+	}
+	
+	a.neuanlageMitglied, a.neuanlageFlugzeug, a.neuanlageWartung
+	{
+		font: 11pt Verdana;
+		text-decoration: none;
+		color: #0000ff;
+	}
+	
+	a.neuanlageMitglied:hover, a.neuanlageFlugzeug:hover, a.neuanlageWartung:hover
+	{
+		font: 11pt Verdana;
+		text-decoration: underline;
+		color: navy;
+	}
+	
+	a.neuanlageWartung:hover
+	{
+		text-decoration: none !important;
+	}
+
+	a.mitgliederLinks, a.flugzeugeLinks
+	{
+		background-image: url('../img/zwoggel.jpg');
+		background-repeat: no-repeat;
+		background-position: 0px 3px;
+		text-decoration: none;
+		color: #0000ff;
+		padding-left: 15px;
+		padding-right: 10px;
+	}
+	
+	a.mitgliederLinks:hover, a.flugzeugeLinks:hover
+	{
+		background-image: url('../img/zwoggel.jpg');
+		background-repeat: no-repeat;
+		background-position: 0px 3px;
+		text-decoration: underline;
+		color: navy;
+		padding-left: 15px;
+		padding-right: 10px;
+	}
+	
+	span.flugzeugeLinks
+	{
+		background-image: url('../img/zwoggel.jpg');
+		background-repeat: no-repeat;
+		background-position: 0px 3px;
+		text-decoration: none;
+		padding-left: 15px;
+		padding-right: 10px;
+	}
+	
+	table.fluggeldkonten
+	{
+		font: 9pt Verdana, Sans-Serif;
+	}
+	
+	table.monatsabrechnung
+	{
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+	}
+	
+	td.buchstabe
+	{
+		font: 9pt Verdana, Sans-Serif;
+		font-weight: bold;
+		color: #ffffff;
+		background-color: #404040;
+		border: 1px solid #ffffff;
+		text-align: center;
+	}
+	
+	a.fluggeldkonten
+	{
+		text-decoration: none;
+		color: #0000ff;
+		font-size: 8pt;
+	}
+	
+	a.fluggeldkonten:hover
+	{
+		text-decoration: underline;
+		color: #0000ff;
+		font-size: 8pt;
+	}
+	
+	#ui-datepicker-div
+	{
+		font-size: 9pt !important;
+	}
+	
+	table.fluggeldkonto_edit
+	{
+		font: 10pt Verdana, Sans-Serif;
+	}
+	
+	table.tabelle_kontoauszug,
+	table.tabelle_umsatzstatistik,
+	table.tabelle_jahresumsaetze
+	{
+		font: 9pt Tahoma, Sans-Serif;
+	}
+	
+	table.tabelle_fluege_zeitfenster
+	{
+		font: 10pt Verdana, Sans-Serif;
+	}
+	
+	table.tabelle_gesamtumsatz
+	{
+		font: 12pt Verdana, Sans-Serif;
+	}
+	table.tabelle_gesamtumsatz th
+	{
+		border-bottom: 1px solid #000000;
+	}
+	
+	a.zur_uebersicht
+	{
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+		text-decoration: none;
+	}
+
+	a.zur_uebersicht:hover
+	{
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+		text-decoration: underline;
+	}
+	
+	table.mitgliederliste, table.flugzeugliste
+	{
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+		line-height: 150%;
+	}
+	
+	table.flugzeugstatistik, td.flugzeugstatistik
+	{
+		font: 8pt Verdana, Sans-Serif;
+		color: #333333;
+	}
+	
+	table.wartungsliste
+	{
+		font: 8pt Tahoma, Sans-Serif;
+		color: #333333;
+		line-height: 130%;
+	}
+	
+	a.mitgliederliste
+	{
+		text-decoration: none;
+		color: #0000ff;
+	}
+	
+	a.mitgliederliste:hover
+	{
+		text-decoration: underline;
+		color: #0000ff;
+	}
+	
+	.ui-dialog, .ui-dialog-buttonpane
+	{
+		background-image: none !important;
+		background-color: #f7f7f7 !important;
+	}
+	
+	.ui-dialog-title
+	{
+		font: 10pt Verdana, Sans-Serif !important;
+		color: #333333 !important;
+		font-weight: bold !important;
+		margin-top: -1px !important;
+	}
+
+	.dialog-confirm, .ui-dialog-content
+	{
+		height: 60px !important;
+	}
+	
+	.ui-dialog .ui-dialog-content {
+		overflow: hidden !important;
+	}
+	
+	.ui-button
+	{
+		background-image: url('../img/toolbar_button_item_bg.jpg') !important;
+		height: 28px !important;
+		width: 85px !important;
+		border: 1px solid #666666 !important;
+		-webkit-border-radius : 5px !important;
+		-khtml-border-radius  : 5px !important;
+		-moz-border-radius    : 5px !important;
+		border-radius         : 5px !important;
+	}
+	
+	.ui-button-text
+	{
+		font: 9pt Verdana, Sans-Serif !important;
+		font-weight: bold !important;
+		color: #ffffff !important;
+	}
+	
+	.ui-dialog-titlebar-close
+	{
+		visibility: hidden !important;
+	}
+	
+	.ui-dialog-titlebar
+	{
+		background-image: none !important;
+		border: 1px solid #666666 !important;
+		-webkit-border-radius : 5px !important;
+		-khtml-border-radius  : 5px !important;
+		-moz-border-radius    : 5px !important;
+		border-radius         : 5px !important;
+		height: 16px !important;
+	}
+	
+	.ui-dialog-buttonpane
+	{
+		height: 30px !important;
+	}
+	
+	.ui-dialog .ui-state-error
+	{
+		padding: .3em;
+	}
+
+	div.tabelle_wartungen
+	{	
+		border: 1px solid #d5d5d5;
+		height: 170px;
+	}
+	
+	div#fancybox-wrap
+	{
+		top:500px !important;
+	}
+	
+	h3.h3-imprint
+	{
+		font: 12pt Verdana, Sans-Serif;
+		font-weight: bold;
+		line-height: 120%;
+		margin: 0px 10px 10px;
+		color: #333333;
+	}
+
+	#address-imprint {
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+		list-style-type: none;
+		padding: 0px 0px 0px 20px;
+		line-height: 150%;
+	}
+	
+	p {
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333;
+		text-align: justify;
+		line-height: 150%;
+		width: 600px;
+		margin: 0px 25px 30px;
+	}
+	
+	.info_message, .error_message {
+		display: none;
+	}
+	
+	table.tabelle_kalender
+	{
+		font: 12pt Verdana, Sans-Serif;
+		font-weight: bold;
+	}
+	
+	table.tabelle_kalender .monats_kalender
+	{
+		margin-bottom: 30px;
+	}
+	table.tabelle_kalender .monats_kalender tr.wochentage th
+	{
+		font: 8pt Verdana, Sans-Serif;
+		font-weight: bold;
+		color: #ffffff !important;
+	}
+	table.tabelle_kalender .monats_kalender tr.wochenkalender td
+	{
+		font: 9pt Verdana, Sans-Serif;
+		color: #333333 !important;
+	}
+	
+	table.tabelle_kalender #jahr {
+		font: 28pt Verdana, Sans-Serif;
+	}
+	
+	table.tabelle_logbuch tr th
+	{
+		font: 10pt Tahoma, Sans-Serif;
+		font-weight: bold;
+		padding: 0 5px 0 5px;
+	}
+	table.tabelle_logbuch tr td
+	{
+		font: 10.5pt Verdana, Sans-Serif;
+	}
+	
+	table.tabelle_startliste tr th
+	{
+		font: 8.5pt Tahoma, Sans-Serif;
+		font-weight: bold;
+		padding: 0 5px 0 5px;
+		white-space: nowrap;
+	}
+	table.tabelle_startliste tr td
+	{
+		font: 8pt Verdana, Sans-Serif;
+	}
+
+-->

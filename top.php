@@ -1,0 +1,5 @@
+<!-- BEGINN: AUSGABE -->	<table style="border: 1px solid #000000; background-color: #f7f7f7;" width="100%" height="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td valign="bottom" style="padding:0px; background:url('./img/banner.jpg') no-repeat;" align="right">				<div style="height: 27px; padding-top: 3px; padding-right: 10px;">					<table border="0">						<tr height="22">							<td style="border-right: 1px solid #c0c0c0;"><a href="startseite.php" class="top" target="Hauptfenster">Startseite</a></td>							<td style="border-right: 1px solid #c0c0c0;"><a href="kontakt.php" class="top" target="Hauptfenster">Kontakt</a></td>							<td><a href="impressum.php" class="top" target="Hauptfenster">Impressum</a></td>						</tr>					</table>				</div>			</td>
+		</tr>
+	</table><!-- ENDE: AUSGABE -->
