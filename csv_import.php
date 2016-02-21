@@ -117,7 +117,7 @@
 				$return .= sprintf('`%s`, ', strtolower($kopf));
 			}
 		
-			$length = strlen($return) - 4;
+			$length = strlen($return);
 			$return = substr($return, 0, $length);
 			
 			// Spalte für den Import-Timestamp anhängen
@@ -261,6 +261,8 @@
 					$return .= sprintf('\'%s\', ', $datensaetze[$i]['anteilleistung1_4']);
 					$return .= sprintf('\'%s\', ', $datensaetze[$i]['anteilleistung2_4']);
 					$return .= sprintf('\'%s\', ', $datensaetze[$i]['anteilsumme_4']);
+					$return .= sprintf('\'%s\', ', $datensaetze[$i]['landungen']);
+					$return .= sprintf('\'%s\', ', $datensaetze[$i]['personen']);
 					$return .= sprintf('\'%s\', ', $timestamp);
 					
 					$return = substr($return, 0, strlen($return) - 2). '), ';
@@ -522,6 +524,8 @@
 						$datensaetze[$i - 1]['anteilleistung1_4']     = trim(str_replace(',', '.', $data[38]));
 						$datensaetze[$i - 1]['anteilleistung2_4']     = trim(str_replace(',', '.', $data[39]));
 						$datensaetze[$i - 1]['anteilsumme_4']         = trim(str_replace(',', '.', $data[40]));
+						$datensaetze[$i - 1]['landungen']             = trim($data[41]);
+						$datensaetze[$i - 1]['personen']              = trim($data[42]);
 					}
 					
 					// Zähler erhöhen
