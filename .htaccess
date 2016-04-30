@@ -1,4 +1,0 @@
-AuthName "Fluggeldkonten"
-AuthType Basic
-AuthUserFile /var/www/web97/html/j15/images/test/.htpasswd
-require valid-user

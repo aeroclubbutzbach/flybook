@@ -11,6 +11,8 @@
 
 	// Verbindung zur Datenbank aufbauen
 	$db_link = mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT);
+	// Zeichenkodierung UTF-8 einstellen
+	mysql_set_charset('utf8', $db_link);
 
 	// prüfen ob die Verbindung zur Datenbank erfolgreich hergestellt werden konnte
 	if (is_resource($db_link)) {

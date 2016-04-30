@@ -145,7 +145,7 @@
 		
 			$ref_pdf->Text(20,  284, utf8_decode('Druckdatum:'));
 			$ref_pdf->Text(40,  284, date('d.m.Y H:i:s'));
-			$ref_pdf->Text(90,  284, utf8_decode('Konto: Volksbank Butzbach, BLZ 51861403, Kto.-Nr: 37052'));
+			$ref_pdf->Text(75,  284, utf8_decode('Volksbank Butzbach - IBAN: DE29 5186 1403 0000 0370 52 - BIC: GENODE51BUT'));
 			$ref_pdf->Text(187, 284, sprintf('%d / {nb}', $ref_pdf->PageNo()));
 			
 			// Schriftfarbe setzen
