@@ -717,7 +717,7 @@
 					default :
 						// in allen anderen Fällen handelt es sich um eine Zeichen-
 						// kette, diese wird generell in Anführungszeichen zurückgegeben
-						$return = sprintf('"%s"', $val);
+						$return = sprintf('"%s"', utf8_decode($val));
 						break;
 				}
 			} else {

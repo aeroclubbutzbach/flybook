@@ -19,6 +19,35 @@
 		// Meldung wird an den Anwender ausgegeben
 		$return['result']  = true;
 		$return['image']   = sprintf('./%s/%s.%s', $_POST['dir'], md5(basename($_POST['id'])), $extension);
+		
+		// Vorbereiten für den Upload in DB
+		$data = addslashes(file_get_contents($return['image']));
+
+		// Metadaten auslesen
+		$meta = getimagesize($return['image']);
+		$mime = $meta['mime'];
+
+		// Modul für DB-Zugriff einbinden
+		require_once('konfiguration.php');
+
+		// Verbindung zur Datenbank herstellen
+		// am System mit Host, Benutzernamen und Password anmelden
+		@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
+		@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+		
+		// SQL-Befehl zurechtfuddeln,
+		// Bild in DB speichern
+		$sql = sprintf('
+			INSERT INTO
+				`userpics` (`id`, `avatar`, `mimetype`) VALUES (%d, "%s", "%s")
+			ON DUPLICATE KEY
+				UPDATE `avatar` = "%s", `mimetype` = "%s"
+		',
+			$_POST['id'], $data, $mime, $data, $mime
+		);
+		
+		// zuvor definierte SQL-Anweisung ausführen
+		mysql_query($sql);
 	} else {
 		// ein Fehler ist beim Datei-Upload passiert
 		// Meldung wird an den Anwender ausgegeben

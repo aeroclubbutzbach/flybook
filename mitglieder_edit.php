@@ -79,7 +79,7 @@
 					'<option %s value="%s">%s</option>',
 					$selected,
 					$zeile->id,
-					$zeile->bezeichnung
+					utf8_encode($zeile->bezeichnung)
 				);
 			}
 
@@ -569,47 +569,47 @@
 			// es sind Datensätze vorhanden
 			while ($zeile = mysql_fetch_object($db_erg)) {
 				// Daten übernehmen wie hinterlegt
-				$data['acb_nr']               = $zeile->id;
-				$data['status']               = $zeile->status;
-				$data['sort']                 = $zeile->sort;
-				$data['anrede']               = $zeile->anrede;
-				$data['titel']                = $zeile->titel;
-				$data['ameavia']              = $zeile->ameavia;
-				$data['vorname']              = $zeile->vorname;
-				$data['nachname']             = $zeile->nachname;
-				$data['geburtsdatum']         = fromSqlDatum($zeile->geburtsdatum);
-				$data['strasse']              = $zeile->strasse;
-				$data['land']                 = $zeile->land;
-				$data['plz']                  = $zeile->plz;
-				$data['ort']                  = $zeile->ort;
-				$data['telefon1']             = $zeile->telefon1;
-				$data['telefon2']             = $zeile->telefon2;
-				$data['mobil1']               = $zeile->mobil1;
-				$data['mobil2']               = $zeile->mobil2;
-				$data['email']                = $zeile->email;
-				$data['www']                  = $zeile->www;
-				$data['bank']                 = $zeile->bank;
-				$data['blz']                  = $zeile->blz;
-				$data['kto']                  = $zeile->kto;
-				$data['ktoinhaber']           = $zeile->ktoinhaber;
-				$data['eintritt']             = fromSqlDatum($zeile->eintritt);
-				$data['austritt']             = fromSqlDatum($zeile->austritt);
-				$data['in_abrechn']           = $zeile->in_abrechn;
-				$data['datenschutz']          = $zeile->datenschutz;
-				$data['rundmail']             = $zeile->rundmail;
-				$data['fl_dienst_absprache']  = $zeile->fl_dienst_absprache;
-				$data['fl_dienst_wochentags'] = $zeile->fl_dienst_wochentags;
-				$data['funktion']             = $zeile->funktion; 
-				$data['ppladat']              = fromSqlDatum($zeile->ppladat);
-				$data['pplbdat']              = fromSqlDatum($zeile->pplbdat);
-				$data['pplcdat']              = fromSqlDatum($zeile->pplcdat);
-				$data['uldat']                = fromSqlDatum($zeile->uldat);
-				$data['medical']              = fromSqlDatum($zeile->medical);
-				$data['jar_tmg']              = $zeile->jar_tmg;
-				$data['jar_sep']              = $zeile->jar_sep;
-				$data['hlbnr']                = $zeile->hlbnr;
-				$data['taetigkeiten']         = $zeile->taetigkeiten;
-				$data['fachausweise']         = $zeile->fachausweise;
+				$data['acb_nr']               = utf8_encode($zeile->id);
+				$data['status']               = utf8_encode($zeile->status);
+				$data['sort']                 = utf8_encode($zeile->sort);
+				$data['anrede']               = utf8_encode($zeile->anrede);
+				$data['titel']                = utf8_encode($zeile->titel);
+				$data['ameavia']              = utf8_encode($zeile->ameavia);
+				$data['vorname']              = utf8_encode($zeile->vorname);
+				$data['nachname']             = utf8_encode($zeile->nachname);
+				$data['geburtsdatum']         = utf8_encode(fromSqlDatum($zeile->geburtsdatum));
+				$data['strasse']              = utf8_encode($zeile->strasse);
+				$data['land']                 = utf8_encode($zeile->land);
+				$data['plz']                  = utf8_encode($zeile->plz);
+				$data['ort']                  = utf8_encode($zeile->ort);
+				$data['telefon1']             = utf8_encode($zeile->telefon1);
+				$data['telefon2']             = utf8_encode($zeile->telefon2);
+				$data['mobil1']               = utf8_encode($zeile->mobil1);
+				$data['mobil2']               = utf8_encode($zeile->mobil2);
+				$data['email']                = utf8_encode($zeile->email);
+				$data['www']                  = utf8_encode($zeile->www);
+				$data['bank']                 = utf8_encode($zeile->bank);
+				$data['blz']                  = utf8_encode($zeile->blz);
+				$data['kto']                  = utf8_encode($zeile->kto);
+				$data['ktoinhaber']           = utf8_encode($zeile->ktoinhaber);
+				$data['eintritt']             = utf8_encode(fromSqlDatum($zeile->eintritt));
+				$data['austritt']             = utf8_encode(fromSqlDatum($zeile->austritt));
+				$data['in_abrechn']           = utf8_encode($zeile->in_abrechn);
+				$data['datenschutz']          = utf8_encode($zeile->datenschutz);
+				$data['rundmail']             = utf8_encode($zeile->rundmail);
+				$data['fl_dienst_absprache']  = utf8_encode($zeile->fl_dienst_absprache);
+				$data['fl_dienst_wochentags'] = utf8_encode($zeile->fl_dienst_wochentags);
+				$data['funktion']             = utf8_encode($zeile->funktion); 
+				$data['ppladat']              = utf8_encode(fromSqlDatum($zeile->ppladat));
+				$data['pplbdat']              = utf8_encode(fromSqlDatum($zeile->pplbdat));
+				$data['pplcdat']              = utf8_encode(fromSqlDatum($zeile->pplcdat));
+				$data['uldat']                = utf8_encode(fromSqlDatum($zeile->uldat));
+				$data['medical']              = utf8_encode(fromSqlDatum($zeile->medical));
+				$data['jar_tmg']              = utf8_encode($zeile->jar_tmg);
+				$data['jar_sep']              = utf8_encode($zeile->jar_sep);
+				$data['hlbnr']                = utf8_encode($zeile->hlbnr);
+				$data['taetigkeiten']         = utf8_encode($zeile->taetigkeiten);
+				$data['fachausweise']         = utf8_encode($zeile->fachausweise);
 				
 				// Adressdaten holen
 				if (($data['strasse'] != '') && ($data['plz'] != '') && ($data['ort'] != '')) {
@@ -717,9 +717,9 @@
         <meta http-equiv="content-language" content="de" />
         <meta name="author" content="Benjamin Stopfkuchen" />
 		
-		<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>
+		<!--<script type="text/javascript" src="./js/jquery-1.10.2.js"></script>-->
 		<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>-->
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 		<script type="text/javascript" src="./js/functions.js"></script>
 
@@ -944,6 +944,7 @@
 							type: 'POST',
 							processData: false,
 							contentType: false,
+							async: false,
 							success: function(data) {
 								// Rückgabe-Daten per JSON auslesen
 								var json = $.parseJSON(data);
