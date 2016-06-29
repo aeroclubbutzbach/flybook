@@ -1,0 +1,90 @@
+"D-0235","ASK 13","AeC Butzbach","BUTZB1","10.00","0.00","0.00","0.00","N","N","J","W5","2sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-0947","DG 303","J. Fink","BUTZB1","0.00","0.00","0.00","0.00","N","N","N","F1","1sp","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-1158","LS 8","AeC Butzbach","BUTZB1","22.00","0.00","0.00","0.00","N","N","J","L1","1sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-3613","LS 4b","A. Bloch","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"1sp","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-3952","DG 303","AeC Butzbach","BUTZB1","20.00","0.00","0.00","0.00","N","N","J","H1","1sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-4519","Duo Discus","AeC Butzbach","BUTZB1","28.70","0.00","0.00","0.00","N","N","J","K1","2sv","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-4642","Grunau Baby","AeC Butzbach","BUTZB1","0.00","0.00","0.00","0.00","N","N","J",NULL,"1sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-5115","LS 4","AeC Butzbach","BUTZB1","20.00","0.00","0.00","0.00","N","N","J","T1","1sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-5463","LS 8","A. Bloch","BUTZB1","0.00","0.00","0.00","0.00","N","N","N","B1","1sp","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-5595","Fox","Kunstfluggem. Hessen","OBERM1","0.00","0.00","0.00","0.00","N","N","N",NULL,"2sp","0.00","S1","F,W","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-5765","Ka 8","Haltergem. D-5765","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"1sp","0.00","S1","F,W","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-6129","ASK 21","AeC Butzbach","BUTZB1","27.60","0.00","0.00","0.00","N","N","J","E1","2sv","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-8385","ASK 23","AeC Butzbach","BUTZB1","18.00","0.00","0.00","0.00","N","N","J",NULL,"1sv","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-8541","Ka 8","AeC Butzbach","BUTZB1","8.00","0.00","0.00","0.00","N","N","J",NULL,"1sv","0.00","S1","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-8611","ASK 13","AeC Butzbach","BUTZB1","10.00","0.00","0.00","0.00","N","N","J",NULL,"2sv","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-8637","Ka 6","M. GÃ¶ttlicher","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"1sp","0.00","S1","F,W","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-9668","Nimbus 2","R. Choynowski","BUTZB1","0.00","0.00","0.00","0.00","N","N","N","PJ","1sp","0.00","S1","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-EPSV","Piper Sport","PS Probeflug","BUTZB1","65.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","3.50","M3","E","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KDSY","ASH 26 E","D. Syfuss","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"1sp","0.00","S2","F,W","99",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KFBB","Super Dimona","AeC Butzbach","BUTZB1","0.00","0.00","0.00","0.00","N","N","J",NULL,"Div","0.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KIEJ","SF 25C","AeC Butzbach","BUTZB1","24.00","25.00","0.00","0.00","N","J","J",NULL,"Fav","0.00","MS","E","2","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-KIEN","SF 25C","AeC Butzbach","BUTZB1","24.30","20.20","0.00","0.00","N","J","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KIEO","SF 25C","AeC Butzbach","BUTZB1","24.30","25.70","0.00","0.00","N","J","J",NULL,"Fav","0.00","MS","E","2","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-KIEQ","SF 25C","AeC Butzbach","BUTZB1","24.30","25.70","0.00","0.00","N","J","J",NULL,"Fav","0.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KIEZ","SF 25C","AeC Butzbach","BUTZB1","18.60","20.20","0.00","0.00","N","N","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KIOZ","SF 25C","AeC Butzbach","BUTZB1","18.60","20.20","0.00","0.00","N","N","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KKCC","Super Dimona","AeC Butzbach","BUTZB1","36.80","25.40","0.00","0.00","N","J","J",NULL,"Div","0.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KLDG","DG 1001T","DG Probeflug","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"1sv","0.00","S2","F,W","99","Fliegbar mit -Segelflugschein mit TMG-Berechtigung ODER -PPL-N mit TMG-Berechtigung ODER -JAR-FCL 1 PPL A mit TMG-Berechtigung.","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KLWG","Super Dimona","AeC Butzbach","BUTZB1","36.80","32.20","0.00","0.00","N","J","J",NULL,"Div","0.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KMGI","SF 28A","M. Gerischer","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Fap","0.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KOMH","Super Dimona","AeC Butzbach","BUTZB1","36.80","32.20","0.00","0.00","N","J","J",NULL,"Div","0.00","MS","E","2","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-KPIA","DG 1001T","AeC Butzbach","BUTZB1","32.40","45.00","0.00","0.00","N","N","J","HK","2sv","0.00","S2","F,W","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-KTIL","SF 25C","AeC Butzbach","BUTZB1","18.60","20.20","0.00","0.00","N","N","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KTIN","SF 25C","AeC Butzbach","BUTZB1","18.60","20.20","0.00","0.00","N","N","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-KTIS","SF 25C","AeC Butzbach","BUTZB1","18.60","20.20","0.00","0.00","N","N","J",NULL,"Fav","3.00","MS","E","99","Fliegbar mit
+-Segelflugschein mit TMG-Berechtigung ODER 
+-PPL-N mit TMG-Berechtigung ODER 
+-JAR-FCL 1 PPL A mit TMG-Berechtigung","0","0","0",NULL,"0","0",NULL,"J","z"
+"D-MAWL","Sila 450c","AeC Butzbach","BUTZB1","0.00","0.00","0.00","0.00","N","N","J",NULL,"Ulv","0.00","UL","E","2",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-MAXT","Sunwheel","Haltergem. D-MAXT","BUTZB1","55.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3",NULL,"0","0","0",NULL,"0","0",NULL,"N","a"
+"D-MDYB","WT 9","AeC Butzbach","BUTZB1","61.00","0.00","0.00","0.00","N","N","J",NULL,"Ulv","0.00","UL","E","3","Kein Einsatz für die Anfängerschulung","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MEPS","CT","Jean Dufour","BADWO1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","UL-Fluglehrerlehrgang 09.09. bis 14.09.2014","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MGUW","Breezer","LSV Backnang-Hein.","BACKN1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","UL-Fluglehrerlehrgang 09.09. bis 14.09.2014","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MIRI","C42","Skyline Flugschule","GIESS1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","UL-Fluglehrerlehrgang 09.09. bis 14.09.2014","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MLUM","WT 9","AeC Butzbach","BUTZB1","61.00","0.00","0.00","0.00","N","N","J",NULL,"Ulv","0.00","UL","E","2","Kein Einsatz für die Anfängerschulung","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MOAF","P92 Echo","GÃ¼nther Spitzer, DULV","COBUR1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","UL-Fluglehrerlehrgang 09.09. bis 14.09.2014","0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MOUG","FK9","E. Bernhard","GIESR1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MPZI","Sila 450c","Probeflug","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","z"
+"D-MTAP","FK12","D. Pienitz","GIESR1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3",NULL,"0","0","0",NULL,"0","0",NULL,"J","a"
+"D-MTRA","Eurofox","LSG Braunfels","BRAUF1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","UL-Fluglehrerlehrgang 09.09. bis 14.09.2014","0","0","0",NULL,"0","0",NULL,"J","a"
+"SE-VUE","Blackwing","Blackwing Sweden AB","BUTZB1","0.00","0.00","0.00","0.00","N","N","N",NULL,"Ulp","0.00","UL","E","3","Testflugzeug","0","0","0",NULL,"0","0",NULL,"J","z"

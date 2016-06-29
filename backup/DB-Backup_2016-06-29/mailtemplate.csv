@@ -1,0 +1,40 @@
+"1","ABR","2014-02-13","Liebe(r) {name},
+
+dies ist eine automatisch durch flybook und ameAVIA erzeugte Abrechnung. Nach Berechnung und Buchung der Fluggebühren des letzten Monats in Höhe von {summe} EUR beträgt Dein Saldo auf dem Fluggeldkonto nun
+
+{saldo} EUR.
+
+Bitte prüfe Deine Flüge und Deinen Kontostand und teile etwaige Unstimmigkeiten dem Vorstand mit.
+
+Bitte berücksichtige, dass möglicherweise letzte Zahlungseingänge noch nicht verbucht und damit in der Abrechnung unberücksichtigt sind.
+
+Sofern Dein Konto einen negativen Stand aufweist und Du keine Abbuchungserlaubnis erteilt hast, gleiche bitte Dein Konto in den nächsten Tagen selbst aus.
+
+Fliegerische Grüße
+
+Vorstand Aero Club Butzbach e.V."
+"2","ABR","2014-11-12","Liebe(r) {name},
+
+dies ist eine automatisch durch flybook und ameAVIA erzeugte Abrechnung. Nach Berechnung und Buchung der Fluggebühren des letzten Monats in Höhe von {summe} EUR beträgt Dein Saldo auf dem Fluggeldkonto nun
+
+{saldo} EUR.
+
+Bitte prüfe Deine Flüge und Deinen Kontostand und teile etwaige Unstimmigkeiten dem Vorstand unter abrechnung@aero-club-butzbach.de mit.
+
+Bitte berücksichtige, dass möglicherweise letzte Zahlungseingänge noch nicht verbucht und damit in der Abrechnung unberücksichtigt sind.
+
+Sofern Dein Konto einen negativen Stand aufweist und Du keine Abbuchungserlaubnis erteilt hast, gleiche bitte Dein Konto in den nächsten Tagen selbst aus.
+
+Fliegerische Grüße
+
+Vorstand Aero Club Butzbach e.V."
+"3","FB","2014-12-30","Liebe(r) {name},
+
+dies ist ein automatisch durch flybook und ameAVIA erzeugter Auszug aus deinem Flugbuch.
+
+{flugzeiten}
+
+In Anhang zu dieser eMail findest du deinen Flugbuchauszug, der letzten 12 Monate, im PDF-Format. Ebenfalls vorhanden ist dein aktueller Trainingsstand nach dem aktuellen Trainingsbarometer des DAeC, Referat Flugsicherheit.
+
+Fliegerische Grüße
+Vorstand Aero Club Butzbach e.V."
