@@ -711,7 +711,7 @@
 
         <title>Mitglied speichern</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta http-equiv="content-language" content="de" />

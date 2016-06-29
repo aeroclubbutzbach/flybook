@@ -51,6 +51,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die IDs der Flugzeug-
@@ -114,6 +115,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die IDs der Flugplätze/
@@ -179,6 +181,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die IDs der Flugzeugstati
@@ -242,6 +245,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die IDs der Wartungen
@@ -302,6 +306,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die IDs des technischen
@@ -369,6 +374,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// die Bezeichnungen und die Daten der
@@ -437,6 +443,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
             // die letzten fünf Wartungen für das aktuelle Flugzeug ermitteln
@@ -766,32 +773,32 @@
 			// es sind Datensätze vorhanden
 			while ($zeile = mysql_fetch_object($db_erg)) {
 				// Daten übernehmen wie hinterlegt
-				$data['kennzeichen']              = $zeile->kennzeichen;
-				$data['flugzeugtyp']              = $zeile->flugzeugtyp;
-				$data['w_kennz']                  = $zeile->w_kennz;
-				$data['sort']                     = $zeile->sort;
-				$data['typ1']                     = $zeile->typ1;
-				$data['standort']                 = $zeile->standort;
-				$data['halter']                   = $zeile->halter;
-				$data['status']                   = $zeile->status;
-				$data['nvfr']                     = $zeile->nvfr;
-				$data['cvfr']                     = $zeile->cvfr;
-				$data['vereinsflugzeug']          = $zeile->vereinsflugzeug;
-				$data['bemerkungen']              = $zeile->bemerkungen;
-				$data['fluggebuehr']              = number_format($zeile->fluggebuehr,  2, ',', '');
-				$data['motorgebuehr']             = number_format($zeile->motorgebuehr, 2, ',', '');
-				$data['gastgebuehr']              = number_format($zeile->gastgebuehr,  2, ',', '');
-				$data['startgebuehr']             = number_format($zeile->startgebuehr, 2, ',', '');
-				$data['landegebuehr']             = number_format($zeile->landegebuehr, 2, ',', '');
-				$data['startart']                 = $zeile->startart;
-				$data['typ']                      = $zeile->typ;
-				$data['zelle_stunden']            = $zeile->zelle_stunden;
-				$data['restzeit_motor']           = $zeile->restzeit_motor;
-				$data['restzeit_prop']            = $zeile->restzeit_prop;
-				$data['stand_wartung']            = fromSqlDatum($zeile->stand_wartung);
-				$data['naechste_wartung']         = $zeile->naechste_wartung;
-				$data['naechste_wartung_stunden'] = $zeile->naechste_wartung_stunden;
-				$data['naechste_wartung_datum']   = fromSqlDatum($zeile->naechste_wartung_datum);
+				$data['kennzeichen']              = utf8_encode($zeile->kennzeichen);
+				$data['flugzeugtyp']              = utf8_encode($zeile->flugzeugtyp);
+				$data['w_kennz']                  = utf8_encode($zeile->w_kennz);
+				$data['sort']                     = utf8_encode($zeile->sort);
+				$data['typ1']                     = utf8_encode($zeile->typ1);
+				$data['standort']                 = utf8_encode($zeile->standort);
+				$data['halter']                   = utf8_encode($zeile->halter);
+				$data['status']                   = utf8_encode($zeile->status);
+				$data['nvfr']                     = utf8_encode($zeile->nvfr);
+				$data['cvfr']                     = utf8_encode($zeile->cvfr);
+				$data['vereinsflugzeug']          = utf8_encode($zeile->vereinsflugzeug);
+				$data['bemerkungen']              = utf8_encode($zeile->bemerkungen);
+				$data['fluggebuehr']              = utf8_encode(number_format($zeile->fluggebuehr,  2, ',', ''));
+				$data['motorgebuehr']             = utf8_encode(number_format($zeile->motorgebuehr, 2, ',', ''));
+				$data['gastgebuehr']              = utf8_encode(number_format($zeile->gastgebuehr,  2, ',', ''));
+				$data['startgebuehr']             = utf8_encode(number_format($zeile->startgebuehr, 2, ',', ''));
+				$data['landegebuehr']             = utf8_encode(number_format($zeile->landegebuehr, 2, ',', ''));
+				$data['startart']                 = utf8_encode($zeile->startart);
+				$data['typ']                      = utf8_encode($zeile->typ);
+				$data['zelle_stunden']            = utf8_encode($zeile->zelle_stunden);
+				$data['restzeit_motor']           = utf8_encode($zeile->restzeit_motor);
+				$data['restzeit_prop']            = utf8_encode($zeile->restzeit_prop);
+				$data['stand_wartung']            = utf8_encode(fromSqlDatum($zeile->stand_wartung));
+				$data['naechste_wartung']         = utf8_encode($zeile->naechste_wartung);
+				$data['naechste_wartung_stunden'] = utf8_encode($zeile->naechste_wartung_stunden);
+				$data['naechste_wartung_datum']   = utf8_encode(fromSqlDatum($zeile->naechste_wartung_datum));
 				
 				// Daten der letzten Jahresnachprüfung ermitteln
 				$letzte_jnp = getLetzteJNP($zeile->kennzeichen);
@@ -865,7 +872,7 @@
 
         <title>Flugzeug speichern</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta http-equiv="content-language" content="de" />
@@ -1708,6 +1715,7 @@
 											<th align="left" width="130" style="padding-left: 8px;"><label for="naechste_wartung">N&auml;chste Wartung:</label></th>
 											<td colspan="3">
 												<select name="naechste_wartung" id="naechste_wartung" tabindex="38" class="flugzeug_anlegen" style="width: 437px;">
+													<option value="0"></option>
 													<?php if (isset($data['naechste_wartung'])) { echo getListeWartungen($data['naechste_wartung']); } else { echo getListeWartungen(); } ?>
 												</select>
 											</td>

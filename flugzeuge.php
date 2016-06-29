@@ -23,6 +23,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurechtfuddeln,
 			// alle vorhandenen Flugzeuge werden ermittelt
@@ -157,7 +158,7 @@
 
         <title>Flugzeugliste</title>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta http-equiv="Content-Script-Type" content="text/javascript" />
         <meta http-equiv="Content-Style-Type" content="text/css" />
         <meta http-equiv="content-language" content="de" />

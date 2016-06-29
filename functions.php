@@ -50,6 +50,7 @@
 			// am System mit Host, Benutzernamen und Password anmelden
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
+			mysql_set_charset('utf8');
 			
 			// SQL-Befehl zurecht fuddeln,
 			// aktuelles Fluggeldkonto für ausgewähltes Mitglied ermitteln
@@ -517,10 +518,11 @@
 	 * die aktuellen Mitglieder mit vorhandener eMail-Adresse
 	 * werden ermittelt und wird als Array zurückgegeben
 	 *
-	 * @return array $return
+	 * @params boolean $filter
+	 * @return array   $return
 	 */
 	if (!function_exists('getEmailadressen')) {
-		function getEmailadressen()
+		function getEmailadressen($filter = false)
 		{
 			// Rückgabe-Variable definieren
 			$return = array();
@@ -533,22 +535,42 @@
 			@mysql_connect(MYSQL_HOST, MYSQL_BENUTZER, MYSQL_KENNWORT) or die('Could not connect to mysql server.' );
 			@mysql_select_db(MYSQL_DATENBANK) or die('Could not select database.');
 		
-			// SQL-Befehl zurechtfuddeln,
-			// die aktuellen Mitglieder mit vorhandener eMail-Adresse werden ermittelt
-			$sql = sprintf('
-				SELECT
-					`mitglieder`.`id`,
-					`mitglieder`.`nachname`,
-					`mitglieder`.`vorname`,
-					`mitglieder`.`email`
-				FROM
-					`mitglieder`
-				WHERE
-					NOT `mitglieder`.`email` IS NULL AND
-					`mitglieder`.`rundmail` = "J"
-				ORDER BY
-					`mitglieder`.`email` ASC
-			');
+			if (!$filter) {
+				// SQL-Befehl zurechtfuddeln,
+				// die aktuellen Mitglieder mit vorhandener eMail-Adresse werden ermittelt
+				$sql = sprintf('
+					SELECT
+						`mitglieder`.`id`,
+						`mitglieder`.`nachname`,
+						`mitglieder`.`vorname`,
+						`mitglieder`.`email`
+					FROM
+						`mitglieder`
+					WHERE
+						NOT `mitglieder`.`email` IS NULL AND
+						`mitglieder`.`rundmail` = "J"
+					ORDER BY
+						`mitglieder`.`email` ASC
+				');
+			} else {
+				// SQL-Befehl zurechtfuddeln,
+				// nur die aktuellen Flugschüler mit vorhandener eMail-Adresse werden ermittelt
+				$sql = sprintf('
+					SELECT
+						`mitglieder`.`id`,
+						`mitglieder`.`nachname`,
+						`mitglieder`.`vorname`,
+						`mitglieder`.`email`
+					FROM
+						`mitglieder`
+					WHERE
+						NOT `mitglieder`.`email` IS NULL AND
+						`mitglieder`.`rundmail` = "J" AND
+						`mitglieder`.`status` = "S"
+					ORDER BY
+						`mitglieder`.`email` ASC
+				');
+			}
 
 			// zuvor definierte SQL-Anweisung ausführen
 			// Anzahl der Datensätze sollte größer als 0 sein um TRUE zurückzugeben
